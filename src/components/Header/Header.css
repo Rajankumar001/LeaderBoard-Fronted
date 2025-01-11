@@ -1,0 +1,18 @@
+.header-calss{
+    background-color:  #eeede7;;
+    padding: 0px 20px;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.header-calss a{
+    font-size: 1.3rem;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000c66;
+}
+@media (max-width:600px) {
+    .header-calss{
+        width: 460px;
+    }
+}

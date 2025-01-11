@@ -1,0 +1,205 @@
+
+.monthly-container{
+    overflow: scroll;
+    padding: 0;
+    margin: auto;
+    border-radius: 18px;
+    background-color: #000c66;
+    margin-top: 10px;
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    justify-content:space-between;
+    gap: 12px;
+}
+.sidebar{
+    position:sticky;
+    top: 0;
+    left: 0;
+    padding-top:20px ;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.month-leaderboard-button{
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2rem;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.monthly-rank{
+    width:50%;
+    display: flex;
+}
+.active{
+    background-color: rgb(41, 204, 57);
+}
+.top-rankers{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    position:sticky;
+    top: 0;
+    width: 35%;
+    background-color: #eed544;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%; 
+}
+.leader_board_image{
+    width: 100%;
+    height: 90%;
+}
+.rank-container{
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 650px;
+    height: 50px;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #fefdf5;
+    display: flex;
+    background: linear-gradient(to right, #3e5151, #decba4); 
+    justify-content: space-between;
+    gap: 10px;
+}
+.rank-top-container{
+    color: #fffefe;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 650px;
+    height: 50px;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;
+    background: linear-gradient(to right, #544a7d, #ffd452);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.medal-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+}
+.medal-icon img{
+    width: 50px;
+    height: 30px;
+}
+.rank-counting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    box-shadow: 2px 2px 2px yellow;
+    border-radius: 50%;
+}
+.rank-top-score-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 30px;
+    background-color: #CBA35C;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(231, 229, 229);
+}
+.rank-score-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 30px;
+    box-shadow: 2px 2px 2px #1b1b1a;
+    border-radius: 10px;
+    color: #754E1A;
+}
+@media (max-width:600px) {
+    .top-rankers{
+        display: none;
+    }
+    table{
+        padding: 10px;
+        width: 460px;
+        height: 100%;
+    }
+    .rank-container{
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 10px;
+        width: 430px;
+        height: 50px;
+        font-family: "Roboto", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.2rem;
+        color: #fefdf5;
+        display: flex;
+        background: linear-gradient(to right, #3e5151, #decba4); 
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .rank-top-container{
+        color: #fffefe;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 10px;
+        width: 430px;
+        height: 50px;
+        font-family: "Roboto", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.2rem;
+        background: linear-gradient(to right, #544a7d, #ffd452);
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .sidebar{
+        display: none;
+    }
+    .monthly-rank{
+        width: 460px;
+        height: 100%;
+    }
+    .monthly-container{
+        position: relative;
+        width: 460px !important;
+        height: 100%;
+        /* padding: 20px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .responsive-button-monthly{
+        width: 250px;
+        height: 55px;
+    }
+    .Mobile-responsive-monthly{
+        width: 460px;
+        height: 55px;
+    }
+}
+@media (min-width:600px) {
+    .Mobile-responsive-monthly{
+        display: none;
+    } 
+}

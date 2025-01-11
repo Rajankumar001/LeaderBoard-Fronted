@@ -1,0 +1,48 @@
+.container-fluid{
+   font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  
+}
+
+.container-fluid a{
+  color: #eeede7;
+}
+.navbar{
+  height: 60px;
+  background-color: #000c66;
+}
+span{
+  margin-right: 5px;
+  color:#eed544 ;
+}
+.navbar-brand{
+  margin-left: 40%;
+}
+@media (max-width:600px) {
+  .navbar{
+    width: 460px;
+    padding-left: 0;
+    height: 80px;
+  }
+  .navbar-toggler{
+      border: 2px solid white;
+  }
+  .navbar-toggler-icon{
+   background-color: #eeede7;
+  }
+  .navbar-brand{
+    margin-left: 18% !important;
+  }
+  .container-fluid{
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-nav .nav-link{
+    margin-left: 10px;
+    width: 60px;
+    height: 30px;
+  }
+ 
+  
+}
