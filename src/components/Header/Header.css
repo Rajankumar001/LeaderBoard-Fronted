@@ -1,18 +1,62 @@
-.header-calss{
-    background-color:  #eeede7;;
+.header-class{
+    background-color:  #eeede7;
     padding: 0px 20px;
     font-family: "Roboto", serif;
     font-weight: 500;
     font-style: normal;
 }
-.header-calss a{
+.header-class a{
     font-size: 1.3rem;
     margin-left: 20px;
     text-decoration: none;
     color: #000c66;
 }
+.User-Name{
+    font-size: 1.3rem;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    width: 100px;
+    height: 48.8px;
+    position:absolute;
+    background-color:  #eeede7 !important;
+    right: 15%;
+    color: white;
+}
+.user-dropdown .dropdown-menu{
+    width: 120px !important; 
+    height: 50px;
+    
+  }
+.logout-button{
+   margin-left: 30px;
+    padding: 0;
+    border: none;
+   width: 100px !important;
+   background-color: #ffffff;
+   height: 35px;
+}
+.user-dropdown{
+    width: 120px !important;
+}
+
 @media (max-width:600px) {
-    .header-calss{
+    .header-class{
         width: 460px;
     }
+    .User-Name{
+        position: fixed;
+        font-size: 1.3rem;
+        font-family: "Roboto", serif;
+        font-weight: 500;
+        font-style: normal;
+        width: 100px;
+        height: 48.8px;
+        z-index: 1000;
+        /* position:absolute; */
+        background-color:  #eeede7 !important;
+        right: 15%;
+        color: white;
+    }
+    
 }
