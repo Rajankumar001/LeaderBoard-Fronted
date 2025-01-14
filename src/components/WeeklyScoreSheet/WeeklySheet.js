@@ -3,7 +3,7 @@ import { Image } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { getWeeklyAction } from '../../Action/LeaderBoardAction';
-import  image2 from '../../assets/image_3.png'
+import  image2 from '../../assets/leader_board_img.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import svg_1 from '../../assets/svg_1.png';

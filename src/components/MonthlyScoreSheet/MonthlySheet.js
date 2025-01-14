@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getMonthlyAction } from '../../Action/LeaderBoardAction';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import { Button } from 'react-bootstrap';
-import  image2 from '../../assets/image_3.png'
+import  image2 from '../../assets/leader_board_img.png'
 import HeaderPage from '../Header/Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import svg_1 from '../../assets/svg_1.png';

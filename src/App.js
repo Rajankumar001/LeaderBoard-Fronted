@@ -3,7 +3,6 @@ import Signin from './components/login/Userlogin';
 import OverallSheet from './components/OverallSheet/OverallSheet.js'
 import './App.css';
 import Navbarpage from './components/Navbar/Navbar';
-import HeaderPage from './components/Header/Header';
 import WeeklySheet from './components/WeeklyScoreSheet/WeeklySheet';
 import MonthlySheet from './components/MonthlyScoreSheet/MonthlySheet';
 import HomeScreen from './Screen/HomeScreen.js';

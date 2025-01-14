@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Image } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { getOverallAction } from '../../Action/LeaderBoardAction';
-import image2 from '../../assets/image_3.png';
+import image2 from '../../assets/leader_board_img.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import svg_1 from '../../assets/svg_1.png';
 import svg_2 from '../../assets/svg_2.png';
 import svg_3 from '../../assets/svg_3.png';
 import Loader from '../loader';
 import HeaderPage from '../Header/Header';
+import './OverallSheet.css';
 
 const OverallSheet = () => {
     const dispatch = useDispatch();
@@ -23,7 +24,6 @@ const OverallSheet = () => {
         console.log("localstorage get Item",localStorage.getItem('LoginUser'));
         if (storedLoginUser) {
             setLoginUser(JSON.parse(storedLoginUser));
-            // console.log( setLoginUser(JSON.parse(storedLoginUser)));
         }
     }, []); 
 
@@ -43,8 +43,8 @@ const OverallSheet = () => {
     return (
         <>
             <HeaderPage />
-            <div className="monthly-container">
-                <div className="monthly-rank">
+            <div className="overall-container">
+                <div className="overall-rank">
                     {loading ? (
                         <Loader />
                     ) : error ? (

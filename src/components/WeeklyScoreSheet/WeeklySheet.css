@@ -53,8 +53,9 @@
     border-bottom-left-radius: 50%; 
 }
 .leader_board_image{
+    top: 15%;
     width: 100%;
-    height: 90%;
+    height: 80%;
 }
 .rank-container{
     border-radius: 20px;
