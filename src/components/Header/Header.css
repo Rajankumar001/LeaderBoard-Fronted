@@ -43,6 +43,7 @@
 @media (max-width:600px) {
     .header-class{
         width: 460px;
+        padding: 0;
     }
     .User-Name{
         position: fixed;
