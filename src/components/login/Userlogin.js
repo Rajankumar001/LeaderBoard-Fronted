@@ -96,7 +96,7 @@ const Signin = () => {
       </>
       ):(
         <>
-         <h2 style={{background:}}>Server Under Maintainance</h2>
+  <h2 style={{background:"red"}}>Server Under Maintainance</h2>
         
         </>
       )
