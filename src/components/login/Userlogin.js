@@ -43,8 +43,15 @@ const Signin = () => {
           const userString = JSON.stringify(LoginUser);
             localStorage.setItem('LoginUser ', userString);
             console.log(localStorage.setItem('LoginUser', userString));
+            if(LoginUser.name){
             console.log("LoginUser stored in localStorage:", localStorage.getItem('LoginUser'));
             window.location.href = '/today';
+            }else{
+              (<>
+                <h2> server under maintainance</h2>
+                </>)
+              
+            }
   } 
 },[LoginUser]);
   const SigninHandler =async () => {
