@@ -63,7 +63,8 @@ const Signin = () => {
  
 
   return (
-    <>
+    <>{
+      LoginUser && LoginUser.name?(<>
       <div className='login-main-container'>
       {loading && <p><Loader/></p>}
         {error && <p>Error: {error}</p>}
@@ -92,7 +93,14 @@ const Signin = () => {
           </Form>
         </div>
       </div>
-    
+      </>
+      ):(
+        <>
+         <h2 style={{background:}}>Server Under Maintainance</h2>
+        
+        </>
+      )
+}
     </>
   );
 };
