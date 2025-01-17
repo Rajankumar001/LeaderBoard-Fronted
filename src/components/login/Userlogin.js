@@ -47,7 +47,7 @@ useEffect(() => {
   useEffect(() => {
     console.log("LoginUser  in useEffect:", LoginUser );
     console.log("Entered in user");
-       localStorage.getItem('user'));
+       localStorage.getItem('user');
        console.log("user stored in localStorage:", localStorage.getItem('user'));
     console.log("Exited from user");
     if (LoginUser && Object.keys(LoginUser ).length > 0) {
