@@ -43,15 +43,9 @@ const Signin = () => {
           const userString = JSON.stringify(LoginUser);
             localStorage.setItem('LoginUser ', userString);
             console.log(localStorage.setItem('LoginUser', userString));
-            if(LoginUser.name){
             console.log("LoginUser stored in localStorage:", localStorage.getItem('LoginUser'));
             window.location.href = '/today';
-            }else{
-              (<>
-                <h2> server under maintainance</h2>
-                </>)
-              
-            }
+            
   } 
 },[LoginUser]);
   const SigninHandler =async () => {
@@ -67,11 +61,9 @@ const Signin = () => {
       console.error('Error signing in:', error);
     }
   };
- 
 
   return (
-    <>{
-      LoginUser && LoginUser.name?(<>
+    <>
       <div className='login-main-container'>
       {loading && <p><Loader/></p>}
         {error && <p>Error: {error}</p>}
@@ -101,14 +93,8 @@ const Signin = () => {
         </div>
       </div>
       </>
-      ):(
-        <>
-  <h2 style={{background:"red"}}>Server Under Maintainance</h2>
-        
-        </>
-      )
-}
-    </>
+      
+
   );
 };
 
