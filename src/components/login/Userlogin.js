@@ -21,7 +21,7 @@ useEffect(() => {
     console.log("User stored in localStorage:", user); // Logging the user
 
    
-    },[])
+    },[]);
   useEffect(() => {
     if (error) {
       toast.error("Contact not found!"); 
