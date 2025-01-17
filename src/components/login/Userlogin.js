@@ -15,6 +15,13 @@ const Signin = () => {
   console.log("loginUser",LoginUser);
   const [mobile, setMobile] = useState('');
   const [countryCode, setCountryCode] = useState('');
+useEffect(() => {
+    console.log("Entered in userEffect for user");
+    const user = localStorage.getItem('user'); // Fetching the user from localStorage
+    console.log("User stored in localStorage:", user); // Logging the user
+
+   
+    },[])
   useEffect(() => {
     if (error) {
       toast.error("Contact not found!"); 
