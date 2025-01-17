@@ -44,6 +44,8 @@ const Signin = () => {
             localStorage.setItem('LoginUser ', userString);
             console.log(localStorage.setItem('LoginUser', userString));
             console.log("LoginUser stored in localStorage:", localStorage.getItem('LoginUser'));
+            localStorage.getItem('user'));
+       console.log("user stored in localStorage:", localStorage.getItem('user'));
             window.location.href = '/today';
             
   } 
