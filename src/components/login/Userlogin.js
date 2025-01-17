@@ -17,7 +17,7 @@ const Signin = () => {
   const [countryCode, setCountryCode] = useState('');
 useEffect(() => {
     console.log("Entered in userEffect for user");
-    const user = localStorage.getItem('user'); // Fetching the user from localStorage
+    const user = localStorage.getItem('userid'); // Fetching the user from localStorage
     console.log("User stored in localStorage:", user); // Logging the user
 
    
@@ -46,10 +46,6 @@ useEffect(() => {
 
   useEffect(() => {
     console.log("LoginUser  in useEffect:", LoginUser );
-    console.log("Entered in user");
-       localStorage.getItem('user');
-       console.log("user stored in localStorage:", localStorage.getItem('user'));
-    console.log("Exited from user");
     if (LoginUser && Object.keys(LoginUser ).length > 0) {
           const userString = JSON.stringify(LoginUser);
             localStorage.setItem('LoginUser ', userString);
