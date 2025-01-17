@@ -39,13 +39,13 @@ const Signin = () => {
 
   useEffect(() => {
     console.log("LoginUser  in useEffect:", LoginUser );
+       localStorage.getItem('user'));
+       console.log("user stored in localStorage:", localStorage.getItem('user'));
     if (LoginUser && Object.keys(LoginUser ).length > 0) {
           const userString = JSON.stringify(LoginUser);
             localStorage.setItem('LoginUser ', userString);
             console.log(localStorage.setItem('LoginUser', userString));
             console.log("LoginUser stored in localStorage:", localStorage.getItem('LoginUser'));
-            localStorage.getItem('user'));
-       console.log("user stored in localStorage:", localStorage.getItem('user'));
             window.location.href = '/today';
             
   } 
