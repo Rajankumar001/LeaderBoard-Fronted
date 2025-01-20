@@ -17,7 +17,7 @@ const Signin = () => {
   const [countryCode, setCountryCode] = useState('');
 useEffect(() => {
     console.log("Entered in userEffect for user");
-    const user = localStorage.getItem('userid'); // Fetching the user from localStorage
+    const user = localStorage.getItem('userid and user login'); // Fetching the user from localStorage
     console.log("User stored in localStorage:", user); // Logging the user
 
    
