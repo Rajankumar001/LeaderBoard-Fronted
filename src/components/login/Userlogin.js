@@ -18,6 +18,13 @@ const Signin = () => {
   console.log("error",error);
   const [mobile, setMobile] = useState('');
   const [countryCode, setCountryCode] = useState('');
+useEffect(() => {
+    console.log("Entered in userEffect for user");
+    const user = localStorage.getItem('userid '); // Fetching the user from localStorage
+    console.log("User stored in localStorage:", user); // Logging the user
+
+   
+    },[]);
   useEffect(() => {
     if (error) {
       toast.error("Contact not found!"); 
@@ -41,7 +48,7 @@ const Signin = () => {
   }, []);
 
   useEffect(() => {
-    console.log("LoginUser  in useEffect:", LoginUser );
+    console.log("LoginUser  in useEffect:", LoginUser )
     if (LoginUser && typeof LoginUser === 'string' && LoginUser.includes('DOCTYPE html')) {
       toast.error("An unexpected error occurred. Please try again later.");
     } else if (LoginUser && Object.keys(LoginUser).length > 0) {
@@ -64,7 +71,6 @@ const Signin = () => {
       console.error('Error signing in:', error);
     }
   };
- 
 
   return (
     <>
@@ -97,8 +103,9 @@ const Signin = () => {
           </Form>
         </div>
       </div>
-    
-    </>
+      </>
+      
+
   );
 };
 
