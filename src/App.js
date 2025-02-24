@@ -1,25 +1,33 @@
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Signin from './components/login/Userlogin';
-import OverallSheet from './components/OverallSheet/OverallSheet.js'
+import OverallSheet from './components/OverallSheet/OverallSheet.js';
 import './App.css';
 import Navbarpage from './components/Navbar/Navbar';
 import WeeklySheet from './components/WeeklyScoreSheet/WeeklySheet';
 import MonthlySheet from './components/MonthlyScoreSheet/MonthlySheet';
 import HomeScreen from './Screen/HomeScreen.js';
+
 function App() {
+  const ProtectedRoute = ({ children }) => {
+    const LoginUser = localStorage.getItem('LoginUser');
+    return LoginUser ? children : <Navigate to="/" replace />;
+  };
+
   return (
     <div className='app-container'>
-     <BrowserRouter>
-    <Navbarpage/>
-    <Routes>
-    <Route  path='/today' Component={OverallSheet} exact/>
-    <Route  path='/weeks' Component={WeeklySheet} exact/>
-    <Route  path='/months' Component={MonthlySheet} exact/>
-    <Route  path='/' Component={Signin} exact/>
-    <Route  path='/home' Component={HomeScreen} exact/>
-    </Routes>
-    </BrowserRouter> 
+      <BrowserRouter>
+        <Navbarpage />
+        <Routes>
+          <Route path='/' element={<Signin />} exact />
+          <Route path='/home' element={<ProtectedRoute><HomeScreen /></ProtectedRoute>} exact />
+          <Route path='/today' element={<ProtectedRoute><OverallSheet /></ProtectedRoute>} exact />
+          <Route path='/weeks' element={<ProtectedRoute><WeeklySheet /></ProtectedRoute>} exact />
+          <Route path='/months' element={<ProtectedRoute><MonthlySheet /></ProtectedRoute>} exact />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
+
 export default App;

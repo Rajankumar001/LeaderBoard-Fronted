@@ -9,7 +9,7 @@
     font-size: 1.3rem;
     margin-left: 20px;
     text-decoration: none;
-    color: #000c66;
+    color: #151617;
 }
 .User-Name{
     font-size: 1.3rem;
@@ -39,14 +39,29 @@
 .user-dropdown{
     width: 120px !important;
 }
+.nav-item {
+    cursor: pointer; 
+    padding: 5px 10px; 
+  }
+  
+  .nav-link {
+    color: inherit; 
+    text-decoration: none; 
+  }
+  
+  .nav-link:hover {
+    text-decoration: none; 
+    color: rgb(55, 121, 243); 
+  }
 
 @media (max-width:600px) {
     .header-class{
-        width: 460px;
+        width: 480px;
         padding: 0;
     }
     .User-Name{
-        position: fixed;
+      display: none;
+        position: sticky;
         font-size: 1.3rem;
         font-family: "Roboto", serif;
         font-weight: 500;

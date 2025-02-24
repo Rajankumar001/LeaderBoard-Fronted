@@ -8,11 +8,14 @@ import './Userlogin.css';
 import { SigninAction } from '../../Action/RegistrationAction';
 import Loader from '../loader';
 import PhoneInput from 'react-phone-number-input'
+import { ToastContainer } from 'react-bootstrap';
 const Signin = () => {
   const dispatch = useDispatch();
   const User = useSelector((state) => state.SigninReducer);
+  console.log("User...",User);
   const {LoginUser, loading, error } = User;
   console.log("loginUser",LoginUser);
+  console.log("error",error);
   const [mobile, setMobile] = useState('');
   const [countryCode, setCountryCode] = useState('');
   useEffect(() => {
@@ -39,13 +42,14 @@ const Signin = () => {
 
   useEffect(() => {
     console.log("LoginUser  in useEffect:", LoginUser );
-    if (LoginUser && Object.keys(LoginUser ).length > 0) {
-          const userString = JSON.stringify(LoginUser);
-            localStorage.setItem('LoginUser ', userString);
-            console.log(localStorage.setItem('LoginUser', userString));
-            console.log("LoginUser stored in localStorage:", localStorage.getItem('LoginUser'));
-            window.location.href = '/today';
-  } 
+    if (LoginUser && typeof LoginUser === 'string' && LoginUser.includes('DOCTYPE html')) {
+      toast.error("An unexpected error occurred. Please try again later.");
+    } else if (LoginUser && Object.keys(LoginUser).length > 0) {
+      const userString = JSON.stringify(LoginUser);
+      localStorage.setItem('LoginUser', userString);
+      console.log("LoginUser stored in localStorage:", localStorage.getItem('LoginUser'));
+      window.location.href = '/today';
+    }
 },[LoginUser]);
   const SigninHandler =async () => {
     
@@ -89,6 +93,7 @@ const Signin = () => {
               </Form.Text>
             </Form.Group>
             <Button onClick={SigninHandler} className='login-button'>verify</Button>
+            <ToastContainer/>
           </Form>
         </div>
       </div>

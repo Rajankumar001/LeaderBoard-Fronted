@@ -8,6 +8,9 @@
 .container-fluid a{
   color: #eeede7;
 }
+.container-fluid a:hover{
+  color: #eeede7 !important;
+}
 .navbar{
   height: 60px;
   background-color: #000c66;
@@ -21,7 +24,7 @@ span{
 }
 @media (max-width:600px) {
   .navbar{
-    width: 460px;
+    width: 480px;
     padding-left: 0;
     height: 80px;
   }

@@ -4,5 +4,9 @@
 .app-container{
   padding-bottom: 10px;
 }
-
+@media (max-width:600px) {
+  .app-container{
+    width: 480px;
+  }
+}
 

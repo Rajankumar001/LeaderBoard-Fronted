@@ -7,7 +7,8 @@
     background-color: #000c66;
     margin-top: 10px;
     width: 95vw;
-    height: 95vh;
+    height: 80vh;
+    /* height: 95vh; */
     display: flex;
     justify-content:space-between;
     gap: 12px;
@@ -129,13 +130,36 @@
     border-radius: 10px;
     color: #754E1A;
 }
+@media (min-width:600px)and (max-width:1350px) {
+    .top-rankers{
+        display: none;
+     } 
+     .monthly-rank{
+        width:70%;
+        display: flex;
+    }
+    .monthly-container{
+        overflow: scroll;
+        padding-right: 60px;
+        margin: auto;
+        border-radius: 18px;
+        background-color: #000c66;
+        margin-top: 10px;
+        width: 95vw;
+        height: 80vh;
+        /* height: 95vh; */
+        display: flex;
+        justify-content:space-between;
+        gap: 12px;
+    }    
+}
 @media (max-width:600px) {
     .top-rankers{
         display: none;
     }
     table{
         padding: 10px;
-        width: 460px;
+        width: 480px;
         height: 100%;
     }
     .rank-container{
@@ -143,7 +167,7 @@
         margin-top: 10px;
         margin-left: 10px;
         padding: 10px;
-        width: 430px;
+        width: 440px;
         height: 50px;
         font-family: "Roboto", serif;
         font-weight: 700;
@@ -161,7 +185,7 @@
         margin-top: 10px;
         margin-left: 10px;
         padding: 10px;
-        width: 430px;
+        width: 440px;
         height: 50px;
         font-family: "Roboto", serif;
         font-weight: 700;

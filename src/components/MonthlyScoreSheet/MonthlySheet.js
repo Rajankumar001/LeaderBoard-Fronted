@@ -12,7 +12,7 @@ import svg_2 from '../../assets/svg_2.png';
 import svg_3 from '../../assets/svg_3.png';
 import './MonthlySheet.css';
 import Loader from '../loader';
-const WeeklySheet = () => {
+const MonthlySheet = () => {
     const dispatch = useDispatch();
     const monthlyScore = useSelector((state) => state.getMonthlyScore);
     const { MonthlyScore, loading, error } = monthlyScore;
@@ -126,4 +126,4 @@ const WeeklySheet = () => {
     );
 };
 
-export default WeeklySheet;
+export default MonthlySheet;

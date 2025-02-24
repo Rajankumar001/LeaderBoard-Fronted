@@ -7,7 +7,8 @@
     background-color: #000c66;
     margin-top: 10px;
     width: 95vw;
-    height: 95vh;
+    height: 80vh;
+    /* height: 95vh; */
     display: flex;
     justify-content:space-between;
     gap: 12px;
@@ -136,7 +137,7 @@
     }
     table{
         padding: 10px;
-        width: 460px;
+        width: 480px;
         height: 100%;
     }
     .rank-container{
@@ -144,7 +145,7 @@
         margin-top: 10px;
         margin-left: 10px;
         padding: 10px;
-        width: 430px;
+        width: 440px;
         height: 50px;
         font-family: "Roboto", serif;
         font-weight: 700;
@@ -162,7 +163,7 @@
         margin-top: 10px;
         margin-left: 10px;
         padding: 10px;
-        width: 430px;
+        width: 440px;
         height: 50px;
         font-family: "Roboto", serif;
         font-weight: 700;
@@ -176,13 +177,13 @@
     .sidebar{
         display: none;
     }
-    .monthly-rank{
-        width: 460px;
+    .overall-rank{
+        width: 480px;
         height: 100%;
     }
-    .monthly-container{
+    .overall-container{
         position: relative;
-        width: 460px !important;
+        width: 480px !important;
         height: 100%;
         /* padding: 20px; */
         display: flex;
