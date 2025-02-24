@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseUrl = "http://localhost:8000/";
+const baseUrl = "https://leaderboard-backend-3wvv.onrender.com/";
 export const getWeeklyAction=(week_no)=>async dispatch=>{
     dispatch({type:'WEEKLY_REQUEST'})
     try{
