@@ -1,6 +1,6 @@
 import {legacy_createStore,combineReducers,applyMiddleware} from 'redux'
 import {thunk }from 'redux-thunk';
-import {composeWithDevTools} from 'redux-devtools-extension';
+// import {composeWithDevTools} from 'redux-devtools-extension';
 import { SigninReducer } from './Reducer/RegistrationReducer';
 import { getOverallScore, getWeeklyScore } from './Reducer/LeaderboardReducer';
 import { getMonthlyScore } from './Reducer/LeaderboardReducer';
@@ -22,6 +22,6 @@ import { getMonthlyScore } from './Reducer/LeaderboardReducer';
  const store=legacy_createStore(
     rootReducer,
     initialstate,
-    composeWithDevTools(applyMiddleware(...Middleware))
+    applyMiddleware(...Middleware)
  )
  export default store;
