@@ -135,6 +135,8 @@ form h2{
 .login-button{
     margin-left: 0px;
     width: 400px;
+    font-size: 1.3rem;
+    font-weight: 600;
     height: 50px;
     background-color: #eed544 !important;
     color: #fff;
@@ -170,7 +172,7 @@ span a{
     font-weight: 500;
     font-style: normal;
 }
-.signup_container{
+/* .signup_container{
     margin: 20px 0px;
     font-family: "Roboto", serif;
     font-weight: 500;
@@ -183,7 +185,7 @@ span a{
     display: flex;
     justify-content: center;
     align-items: center;  
-}
+} */
 
 
 
@@ -194,7 +196,7 @@ span a{
         font-style: normal;
         display: flex;
         flex-direction: column;
-        width: 100vw;
+        width: 480px;
         height: auto;
         justify-content: center;
         padding-left: 30px;
@@ -207,15 +209,13 @@ span a{
         outline: none !important;
     }
     .Login_container{
-        /* margin: 20px 0px; */
-        margin-left: 10px;
         font-family: "Roboto", serif;
         font-weight: 500;
         font-style: normal;
         font-weight: 200;
         font-style: normal;
         box-shadow: -4px 5px 4px rgb(208, 206, 206);
-        width:450px;     
+        width:480px;     
         height: 500px;
         display: flex;
         justify-content: center;
@@ -257,6 +257,7 @@ span a{
     .login-button{
         width: 350px;
         height: 50px;
+        font-size: 1.3rem;
         background-color: #F4CE14;
         color: #fff;
     }
@@ -265,17 +266,5 @@ span a{
         color: #379777;
         border: 2px solid #F4CE14;
     }
-    .signup_container{
-        margin: 20px 0px;
-        font-family: "Roboto", serif;
-    font-weight: 500;
-    font-style: normal;
-        font-style: normal;
-        box-shadow: -4px 5px 4px rgb(208, 206, 206);
-        width: 375px;     
-        height: 750px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }  
+
 }

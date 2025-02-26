@@ -8,9 +8,7 @@
     margin-top: 10px;
     width: 95vw;
     height: 80vh;
-    /* height: 95vh; */
     display: flex ;
-    
     justify-content:space-between;
     gap: 12px;
 }
@@ -91,6 +89,9 @@
     justify-content: space-between;
     gap: 10px;
 }
+.active{
+    background-color: rgb(41, 204, 57);
+}
 .medal-icon{
     display: flex;
     justify-content: center;
@@ -147,12 +148,10 @@
         width: 480px !important;
         height: 100%;
         padding-left: 0px;
-        /* padding: 20px; */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* gap: 12px; */
         
     }
     .weekly-rank{
@@ -160,14 +159,18 @@
         height: 100%;
     }
     .Mobile-responsive{
-        /* margin-left: 20px; */
         position: sticky;
         top: 0;
         right: 0;
         overflow: scroll;
         height: 55px;
-        width: 460px !important;
+        width: 480px !important;
         padding-bottom: 10px;
+    }
+    .btn-primary {
+        color: #10190b;
+        font-weight: 600;
+        background: linear-gradient(to right, #544a7d, #ffd452);
     }
     .top-rankers{
        display: none;

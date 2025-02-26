@@ -9,8 +9,6 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import svg_1 from '../../assets/svg_1.png';
 import svg_2 from '../../assets/svg_2.png';
 import svg_3 from '../../assets/svg_3.png';
-import { BiSolidLeftArrow } from "react-icons/bi";
-import { BiSolidRightArrow } from "react-icons/bi";
 import HeaderPage from '../Header/Header.js'
 import './WeeklySheet.css';
 import Loader from '../loader';
@@ -48,9 +46,7 @@ const WeeklySheet = () => {
         <HeaderPage/>
             <div className="Weekly-container">
     <div className='Mobile-responsive'>
-    {/* <BiSolidLeftArrow/> */}
         <ButtonGroup aria-label="Basic example">
-        {/* <i class="fa-solid fa-angle-left"></i> */}
         <Button onClick={() => handleclick(1)} className='responsive-button'>Week 1</Button>
         <Button onClick={() => handleclick(2)}className='responsive-button'>Week 2</Button>
         <Button onClick={() => handleclick(3)}className='responsive-button'>Week 3</Button>
@@ -60,9 +56,7 @@ const WeeklySheet = () => {
         <Button onClick={() => handleclick(7)} className='responsive-button'>Week 7</Button>
         <Button onClick={() => handleclick(8)} className='responsive-button'>Week 8</Button>
         <Button onClick={() => handleclick(9)}className='responsive-button'>Week 9</Button>
-        {/* <i class="fa-solid fa-angle-right"></i> */}
         </ButtonGroup>
-        {/* <BiSolidRightArrow/> */}
     </div> 
                 <div className='sidebar'>
                     {[...Array(9)].map((_, index) => {

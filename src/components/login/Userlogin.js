@@ -2,13 +2,12 @@ import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from'axios';
-import {toast } from 'react-toastify';
+import {ToastContainer,toast } from 'react-toastify';
 import { useDispatch,useSelector } from 'react-redux';
 import './Userlogin.css';
 import { SigninAction } from '../../Action/RegistrationAction';
 import Loader from '../loader';
 import PhoneInput from 'react-phone-number-input'
-import { ToastContainer } from 'react-bootstrap';
 const Signin = () => {
   const dispatch = useDispatch();
   const User = useSelector((state) => state.SigninReducer);
@@ -50,18 +49,22 @@ useEffect(() => {
   useEffect(() => {
     console.log("LoginUser  in useEffect:", LoginUser )
     if (LoginUser && typeof LoginUser === 'string' && LoginUser.includes('DOCTYPE html')) {
-      toast.error("An unexpected error occurred. Please try again later.");
+      toast.error("Contact not found ! please check your number ");
     } else if (LoginUser && Object.keys(LoginUser).length > 0) {
       const userString = JSON.stringify(LoginUser);
       localStorage.setItem('LoginUser', userString);
+      toast.success("contact verified successfully....");
       console.log("LoginUser stored in localStorage:", localStorage.getItem('LoginUser'));
-      window.location.href = '/today';
+      setTimeout(()=>{
+        window.location.href = '/today';
+      },1000)
+      // window.location.href = '/today';
     }
 },[LoginUser]);
   const SigninHandler =async () => {
     
     if (!mobile || mobile.length !==13) {
-      alert('Please enter a valid 10-digit mobile number. and please use country code also');
+      toast.error('Please enter a valid 10-digit mobile number');
       return;
     }
     const user = { mobile };
@@ -98,7 +101,7 @@ useEffect(() => {
                 <p>We'll never share your mobile number with anyone else.</p>
               </Form.Text>
             </Form.Group>
-            <Button onClick={SigninHandler} className='login-button'>verify</Button>
+            <Button onClick={SigninHandler} className='login-button'>Verify</Button>
             <ToastContainer/>
           </Form>
         </div>
