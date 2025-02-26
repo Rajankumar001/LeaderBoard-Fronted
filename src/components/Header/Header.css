@@ -85,6 +85,10 @@
   .person-icon-design{
     color:#000c66;
   }
+  .mobile-view{
+    position: relative;
+    margin-left: 5px;
+  }
   .mobile-dropdown-mobile {
       position: absolute;
       background: #eeede7;
