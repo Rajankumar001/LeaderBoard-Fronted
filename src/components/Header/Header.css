@@ -12,6 +12,26 @@
   text-decoration: none;
   color: #151617;
 }
+.nav-link {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-link.active-link {
+  font-weight: bold;
+  color: rgb(55, 121, 243); 
+}
+
+.nav-link.active-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(55, 121, 243); 
+}
 
 .User-Name {
   font-size: 1.3rem;
@@ -26,7 +46,6 @@
   color: white;
 }
 
-/* Styling for the user dropdown */
 .user-dropdown .dropdown-menu {
   width: 120px !important;
   height: 50px;
@@ -45,23 +64,19 @@
 .user-dropdown {
   width: 120px !important;
 }
+
 .nav-item {
   cursor: pointer;
   padding: 5px 10px;
-}
-
-.nav-link {
-  color: inherit;
-  text-decoration: none;
 }
 
 .nav-link:hover {
   text-decoration: none;
   color: rgb(55, 121, 243);
 }
-@media (max-width:600px) {
-  .header-class{
+
+@media (max-width: 600px) {
+  .header-class {
     width: 480px;
   }
-  
 }
