@@ -39,6 +39,36 @@ const DashboardScreen = () => {
             <div className="grid-item">Item 6</div>
           </div>
        </div>
+       <div className='Dashboard-Screen-four'>
+       <div className="grid-container">
+            <div className="grid-item">Item 1</div>
+            <div className="grid-item">Item 2</div>
+            <div className="grid-item">Item 3</div>
+            <div className="grid-item">Item 4</div>
+            <div className="grid-item">Item 5</div>
+            <div className="grid-item">Item 6</div>
+          </div>
+       </div>
+       <div className='Dashboard-Screen-four'>
+       <div className="grid-container">
+            <div className="grid-item">Item 1</div>
+            <div className="grid-item">Item 2</div>
+            <div className="grid-item">Item 3</div>
+            <div className="grid-item">Item 4</div>
+            <div className="grid-item">Item 5</div>
+            <div className="grid-item">Item 6</div>
+          </div>
+       </div>
+       <div className='Dashboard-Screen-four'>
+       <div className="grid-container">
+            <div className="grid-item">Item 1</div>
+            <div className="grid-item">Item 2</div>
+            <div className="grid-item">Item 3</div>
+            <div className="grid-item">Item 4</div>
+            <div className="grid-item">Item 5</div>
+            <div className="grid-item">Item 6</div>
+          </div>
+       </div>
       </div>
     </>
   )

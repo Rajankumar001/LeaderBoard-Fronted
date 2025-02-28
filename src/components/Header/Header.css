@@ -59,4 +59,9 @@
   text-decoration: none;
   color: rgb(55, 121, 243);
 }
-
+@media (max-width:600px) {
+  .header-class{
+    width: 480px;
+  }
+  
+}

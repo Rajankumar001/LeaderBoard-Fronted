@@ -17,7 +17,8 @@
     /* overflow-x: hidden; */
     /* overflow: scroll; */
     margin: auto;
-    background-color: #000c66 ;
+    /* background-color: #000c66 ; */
+    background-color: #eeede7;
     /* margin-top: 10px; */
     width: 41vw;
     height: 95vh;
@@ -37,6 +38,8 @@
     gap: 22px;
 }
 .week-leaderboard-button{
+    background-color: #000c66;
+    color: white;
     font-family: "Roboto", serif;
     font-weight: 500;
     font-style: normal;
@@ -147,6 +150,21 @@
     color: #754E1A;
 }
 @media (max-width:600px) {
+    .Weekly-Dashboard-container{
+        position: relative;
+        width: 480px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .Weekly-main-container{
+        position: absolute;
+        top: 100%;
+        width:480px;
+        display: flex;
+        flex-direction: column;
+    }
+
     .sidebar{
         display: none;
     }
