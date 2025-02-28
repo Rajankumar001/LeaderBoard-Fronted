@@ -12,6 +12,7 @@ import svg_3 from '../../assets/svg_3.png';
 import HeaderPage from '../Header/Header.js'
 import './WeeklySheet.css';
 import Loader from '../loader';
+import DashboardScreen from '../Screens/DashboardScreen.js';
 const WeeklySheet = () => {
     const dispatch = useDispatch();
     const weeklyScore = useSelector((state) => state.getWeeklyScore);
@@ -43,7 +44,11 @@ const WeeklySheet = () => {
 
     return (
         <>
-        <HeaderPage/>
+        {/* <HeaderPage/> */}
+        <div className='Weekly-Dashboard-container'>
+            <DashboardScreen/>
+            <div className='Weekly-main-container'>
+                <HeaderPage/>
             <div className="Weekly-container">
     <div className='Mobile-responsive'>
         <ButtonGroup aria-label="Basic example">
@@ -93,7 +98,7 @@ const WeeklySheet = () => {
                                 </div>
                             )}</div>
                                 {Score &&  Score.length > 0 ? (
-                                  Score.map((row, index) => (
+                                  Score.slice(0,11).map((row, index) => (
                                     index > 0 && (
                                         <div className={index === 1 || index === 2 || index === 3 ? 'rank-top-container' : 'rank-container'}> 
                                        { index === 1 || index === 2 || index === 3 ? (
@@ -127,9 +132,11 @@ const WeeklySheet = () => {
                         </table>
                     )}
                 </div>
-                <div className='top-rankers'>
+                {/* <div className='top-rankers'>
                  <Image src={image2} className='leader_board_image'></Image> 
-                </div>
+                </div> */}
+            </div>
+            </div>
             </div>
             </>
     );

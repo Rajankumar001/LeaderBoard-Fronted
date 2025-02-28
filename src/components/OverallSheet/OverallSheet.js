@@ -10,6 +10,7 @@ import svg_3 from '../../assets/svg_3.png';
 import Loader from '../loader';
 import HeaderPage from '../Header/Header';
 import './OverallSheet.css';
+import DashboardScreen from '../Screens/DashboardScreen';
 
 const OverallSheet = () => {
     const dispatch = useDispatch();
@@ -42,7 +43,11 @@ const OverallSheet = () => {
 
     return (
         <>
-            <HeaderPage />
+            {/* <HeaderPage /> */}
+            <div className='overall-Dashboard-container'>
+                <DashboardScreen/>
+            <div className='overall-main-container'>
+                <HeaderPage/>
             <div className="overall-container">
                 <div className="overall-rank">
                     {loading ? (
@@ -52,7 +57,7 @@ const OverallSheet = () => {
                     ) : (
                         <table>
                             <div>{userRankingData ? (
-                                <div className='rank-container'>
+                                <div className='overall-rank-container'>
                                     <div className='rank-counting'>{OverallScore.indexOf(userRankingData)}</div>
                                     <div className='rank-name-container'>{LoginUser.name}</div>
                                     <div className='rank-score-container'>{userRankingData.Score}</div>
@@ -63,9 +68,9 @@ const OverallSheet = () => {
                                 </div>
                             )}</div>
                             {OverallScore && OverallScore.length > 0 ? (
-                                OverallScore.map((row, index) => (
+                                OverallScore.slice(0, 11).map((row, index) => (
                                     index > 0 && (
-                                        <div className={index === 1 || index === 2 || index === 3 ? 'rank-top-container' : 'rank-container'}>
+                                        <div className={index === 1 || index === 2 || index === 3 ? 'overall-rank-top-container' : 'overall-rank-container'}>
                                             {index === 1 || index === 2 || index === 3 ? (
                                                 <div className="medal-icon">
                                                     {index === 1 && <img src={svg_1} alt="Gold Medal" />}
@@ -92,9 +97,11 @@ const OverallSheet = () => {
                         </table>
                     )}
                 </div>
-                <div className='top-rankers'>
+                {/* <div className='top-rankers'>
                     <Image src={image2} className='leader_board_image' />
-                </div>
+                </div> */}
+            </div>
+            </div>
             </div>
         </>
     );

@@ -12,6 +12,7 @@ import svg_2 from '../../assets/svg_2.png';
 import svg_3 from '../../assets/svg_3.png';
 import './MonthlySheet.css';
 import Loader from '../loader';
+import DashboardScreen from '../Screens/DashboardScreen';
 const MonthlySheet = () => {
     const dispatch = useDispatch();
     const monthlyScore = useSelector((state) => state.getMonthlyScore);
@@ -41,7 +42,11 @@ const MonthlySheet = () => {
             const userRankingData = getUserRankingData();
     return (
         <>
-          <HeaderPage/>
+          {/* <HeaderPage/> */}
+          <div className='Monthly-Dashboard-container'>
+            <DashboardScreen/>
+          <div className='Monthly-main-container'>
+            <HeaderPage/>
             <div className="monthly-container">
                 <div className='Mobile-responsive-monthly'>
          <ButtonGroup aria-label="Basic example">
@@ -83,7 +88,7 @@ const MonthlySheet = () => {
                                 </div>
                             )}</div>
                                 {MonthlyScore &&  MonthlyScore.length > 0 ? (
-                                  MonthlyScore.map((row, index) => (
+                                  MonthlyScore.slice(0,11).map((row, index) => (
                                     index > 0 && (
                                         <div className={index === 1 || index === 2 || index === 3 ? 'rank-top-container' : 'rank-container'}> 
                                        { index === 1 || index === 2 || index === 3 ? (
@@ -117,9 +122,11 @@ const MonthlySheet = () => {
                         </table>
                     )}
                 </div>
-                <div className='top-rankers'>
+                {/* <div className='top-rankers'>
                  <Image src={image2} className='leader_board_image'></Image> 
-                </div>
+                </div> */}
+            </div>
+            </div>
             </div>
             </>
        

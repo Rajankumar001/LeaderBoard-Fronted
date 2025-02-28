@@ -1,13 +1,26 @@
-
+.Weekly-Dashboard-container{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Weekly-main-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 41vw;
+    display: flex;
+    flex-direction: column;
+}
 .Weekly-container{
-    overflow-x: hidden;
-    overflow: scroll;
+    /* overflow-x: hidden; */
+    /* overflow: scroll; */
     margin: auto;
-    border-radius: 18px;
     background-color: #000c66 ;
-    margin-top: 10px;
-    width: 95vw;
-    height: 80vh;
+    /* margin-top: 10px; */
+    width: 41vw;
+    height: 95vh;
     display: flex ;
     justify-content:space-between;
     gap: 12px;
@@ -28,14 +41,14 @@
     font-weight: 500;
     font-style: normal;
     font-size: 1.2rem;
-    width: 250px;
+    width: 120px;
     height: 40px;
     border: none;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 .weekly-rank{
-    width:50%;
+    width:550px;
     display: flex;
 }
 .active{
@@ -61,7 +74,7 @@
     border-radius: 20px;
     margin-top: 10px;
     padding: 10px;
-    width: 650px;
+    width: 480px;
     height: 50px;
     font-family: "Roboto", serif;
     font-weight: 700;
@@ -78,7 +91,7 @@
     border-radius: 20px;
     margin-top: 10px;
     padding: 10px;
-    width: 650px;
+    width: 480px;
     height: 50px;
     font-family: "Roboto", serif;
     font-weight: 700;

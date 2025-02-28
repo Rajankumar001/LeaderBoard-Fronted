@@ -1,0 +1,80 @@
+.Dashboard-Screen-container{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   gap: 20px;
+    width: 58vw;
+    background-color: #eeede7;
+}
+.Dashboard-Screen-one{
+    width: 90%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Dashboard-Screen-image{
+    width: 100%;
+    height: 280px;
+}
+.Dashboard-Screen-two{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Dashboard-content-one{
+    padding: 30px;
+    width: 30%;
+    height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    border: 2px solid red;
+
+}
+.Dashboard-content-two{
+    width: 30%;
+    height: 60px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    border: 2px solid pink;
+
+}
+.Dashboard-content-three{
+    width: 30%;
+    height: 60px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    border: 2px solid green;
+
+}
+.Dashboard-Screen-three{
+    text-align: center;
+    color: orange;
+    width: 90%;
+    background-color: white;
+    height: auto;
+}
+.Dashboard-Screen-four{
+    text-align: center;
+    color: orange;
+    width: 90%;
+    padding: 20px
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

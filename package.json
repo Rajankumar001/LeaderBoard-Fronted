@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "proxy": "https://leaderboard-backend-2-rmx2.onrender.com/",
+  "proxy": "https://localhost:8000/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

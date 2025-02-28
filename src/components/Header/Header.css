@@ -22,7 +22,7 @@
   height: 48.8px;
   position: absolute;
   background-color: #eeede7 !important;
-  right: 15%;
+  right: 20%;
   color: white;
 }
 
@@ -60,60 +60,3 @@
   color: rgb(55, 121, 243);
 }
 
-@media (max-width: 600px) {
-  
-  .header-class {
-      width: 100%;
-      padding: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
-
-  .User-Name {
-      display: none;
-  }
-  .user-icon-button {
-    width: 80px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-size: 30px;
-      padding-bottom: 8px;
-      color:  #594712 ;
-  }
-  .person-icon-design{
-    color:#000c66;
-  }
-  .mobile-view{
-    position: relative;
-    margin-left: 5px;
-  }
-  .mobile-dropdown-mobile {
-      position: absolute;
-      background: #eeede7;
-      border-radius: 2px;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-      right: -3px;
-      top: 60px;
-      width: 150px;
-      z-index: 10080;
-  }
-
-  .user-name {
-    text-align: center;
-    color: rgb(16, 16, 16);
-      font-weight: bold;
-  }
-
-  .logout-button-mobile {
-    background: linear-gradient(to right, #544a7d, #ffd452);
-    width: 150px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    position:absolute;
-      color: black;
-      border: none;
-      cursor: pointer
-  }
-}
