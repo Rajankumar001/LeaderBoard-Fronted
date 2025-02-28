@@ -214,7 +214,7 @@
     }
     .monthly-container{
         position: relative;
-        width: 460px !important;
+        width: 480px !important;
         height: 100%;
         /* padding: 20px; */
         display: flex;
@@ -224,11 +224,11 @@
         
     }
     .responsive-button-monthly{
-        width: 250px;
+        width: 240px;
         height: 55px;
     }
     .Mobile-responsive-monthly{
-        width: 460px;
+        width: 480px;
         height: 55px;
     }
 }
