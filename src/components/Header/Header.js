@@ -19,8 +19,6 @@ const HeaderPage = () => {
     if (storedUser) {
       setUser(JSON.parse(storedUser));
     }
-
-    // Update active tab based on current path
     setActiveTab(location.pathname);
   }, [location.pathname]);
 
@@ -56,52 +54,6 @@ const HeaderPage = () => {
             </Link>
           </li>
 
-          {user ? (
-            <>
-              {/* Desktop View */}
-              <li className="User-Name d-none d-md-block">
-                <NavDropdown
-                  id="nav-dropdown-dark-example"
-                  title={user.name || "User"}
-                  menuVariant=""
-                  className="user-dropdown"
-                >
-                  <button
-                    onClick={() => {
-                      dispatch(logoutUser());
-                    }}
-                    className="logout-button"
-                  >
-                    Logout
-                  </button>
-                </NavDropdown>
-              </li>
-
-              {/* Mobile View */}
-              <li className="d-md-none mobile-view">
-                <button
-                  className="user-icon-button"
-                  onClick={() => setShowDropdown(!showDropdown)}
-                >
-                  <FaUser size={30} className="person-icon-design"/>
-                </button>
-                {showDropdown && (
-                  <div className="mobile-dropdown-mobile">
-                    <p className="user-name">{user.name}</p>
-                    <button
-                      onClick={() => {
-                        dispatch(logoutUser());
-                        setShowDropdown(false);
-                      }}
-                      className="logout-button-mobile"
-                    >
-                      Logout
-                    </button>
-                  </div>
-                )}
-              </li>
-            </>
-          ) : null}
         </ul>
       </div>
     </>

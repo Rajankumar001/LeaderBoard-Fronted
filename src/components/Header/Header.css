@@ -1,4 +1,6 @@
 .header-class {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   background-color: #eeede7;
   padding: 0px 20px;
   font-family: "Roboto", serif;
@@ -33,7 +35,7 @@
   background-color: rgb(55, 121, 243); 
 }
 
-.User-Name {
+/* .User-Name {
   font-size: 1.3rem;
   font-family: "Roboto", serif;
   font-weight: 500;
@@ -63,7 +65,7 @@
 
 .user-dropdown {
   width: 120px !important;
-}
+} */
 
 .nav-item {
   cursor: pointer;

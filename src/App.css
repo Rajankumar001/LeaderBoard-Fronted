@@ -2,7 +2,9 @@
   text-align: center;
 }
 .app-container{
-  padding-bottom: 10px;
+  position: relative;
+  /* width: 98vw; */
+  padding-bottom: 40px;
 }
 @media (max-width:600px) {
   .app-container{

@@ -1,4 +1,5 @@
 .Monthly-Dashboard-container{
+    margin-top: 60px;
     position: relative;
     width: 98vw;
     display: flex;
@@ -6,28 +7,27 @@
     align-items: center;
 }
 .Monthly-main-container{
+    border-radius: 10px;
     margin-top: 10px;
     position: absolute;
     top: 0;
     right: 0;
-    width: 40vw;
+    width: 41vw;
     display: flex;
     flex-direction: column;
    
 }
 .monthly-container{
-    /* overflow: scroll; */
     padding: 0;
     margin: auto;
-    
-    /* background-color: #000c66; */
     background-color: #eeede7;
-    /* margin-top: 10px; */
-    width: 40vw;
+    width: 41vw;
     height: 95vh;
     display: flex;
     justify-content:space-between;
     gap: 12px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 .sidebar{
     position:sticky;
@@ -53,11 +53,11 @@
     border-bottom-right-radius: 20px;
 }
 .monthly-rank{
-    width:38vw;
+    width:36vw;
     display: flex;
 }
 table{
-    width: 38vw;
+    width: 34vw;
 }
 .active{
     background-color: rgb(41, 204, 57);
@@ -83,7 +83,7 @@ table{
     margin-top: 10px;
     padding: 10px;
     /* width: 480px; */
-    width: 80%;
+    width: 90%;
     height: 50px;
     font-family: "Roboto", serif;
     font-weight: 700;
@@ -100,8 +100,7 @@ table{
     border-radius: 20px;
     margin-top: 10px;
     padding: 10px;
-    /* width: 480px; */
-    width: 80%;
+    width: 90%;
     height: 50px;
     font-family: "Roboto", serif;
     font-weight: 700;
