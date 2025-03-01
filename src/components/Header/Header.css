@@ -79,4 +79,7 @@
   .header-class {
     width: 480px;
   }
+  .mobile-view{
+    display: none;
+  }
 }

@@ -24,7 +24,7 @@ span{
 }
 @media (max-width:600px) {
   .navbar{
-    width: 480px;
+    width: 500px;
     padding-left: 0;
     height: 80px;
   }

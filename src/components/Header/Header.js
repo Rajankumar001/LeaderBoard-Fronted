@@ -12,8 +12,6 @@ const HeaderPage = () => {
   const [showDropdown, setShowDropdown] = useState(false); 
   const dispatch = useDispatch();
   const location = useLocation();
-
-  // Default active tab set
   const [activeTab, setActiveTab] = useState("/today");
 
   useEffect(() => {
