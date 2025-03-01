@@ -58,7 +58,6 @@ useEffect(() => {
       setTimeout(()=>{
         window.location.href = '/today';
       },1000)
-      // window.location.href = '/today';
     }
 },[LoginUser]);
   const SigninHandler =async () => {

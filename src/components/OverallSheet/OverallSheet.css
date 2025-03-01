@@ -32,8 +32,8 @@
     width:40vw;
     display: flex;
 }
-table{
-    width:38w;
+.overall-table{
+    width:39vw;
 }
 .active{
     background-color: rgb(41, 204, 57);

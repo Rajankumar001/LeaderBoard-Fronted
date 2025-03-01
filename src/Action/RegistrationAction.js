@@ -7,7 +7,6 @@ export const SigninAction=(user)=>async dispatch=>{
       const response=await axios.post(`${baseUrl}api/User/signin`,user);
       console.log("API Response:", response.data);
       dispatch({type:'SIGNIN_SUCCESS',payload:response.data})
-      // window.location.href='/today'
    
   }catch(error){
      dispatch({type:'SIGNIN_ERROR',payload:error.message})

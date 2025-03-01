@@ -55,7 +55,7 @@ const OverallSheet = () => {
                     ) : error ? (
                         <p className="error">Error: {error}</p>
                     ) : (
-                        <table>
+                        <table className='overall-table'>
                             <div>{userRankingData ? (
                                 <div className='overall-rank-container'>
                                     <div className='rank-counting'>{OverallScore.indexOf(userRankingData)}</div>
