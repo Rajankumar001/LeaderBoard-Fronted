@@ -11,7 +11,7 @@ const DashboardScreen = () => {
        <div className='Dashboard-Screen-two'>
         <div className='Dashboard-content-one'>Total Ap earned:280</div>
         <div className='Dashboard-content-two'>Total check-ins done:1</div>
-        <div className='Dashboard-content-three'>Totalchacek-ins missed:4</div>
+        <div className='Dashboard-content-three'>Total check-ins missed:4</div>
        </div>
        <div className='Dashboard-Screen-three'>
         <h5>Day Streak 1</h5>
