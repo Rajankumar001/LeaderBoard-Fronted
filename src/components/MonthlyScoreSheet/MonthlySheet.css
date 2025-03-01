@@ -13,7 +13,7 @@
     width: 40vw;
     display: flex;
     flex-direction: column;
-
+   
 }
 .monthly-container{
     /* overflow: scroll; */
@@ -168,6 +168,8 @@ table{
         width: 480px;
         display: flex;
         flex-direction: column;
+        align-items: center;
+
     
     }
     .top-rankers{
