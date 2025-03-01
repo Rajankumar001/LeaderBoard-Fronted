@@ -99,6 +99,51 @@
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+.Dashboard-content-one,
+.Dashboard-content-two,
+.Dashboard-content-three {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.Dashboard-content-one:hover {
+    background-color: red;
+    color: white;
+    border-color: darkred;
+    transform: scale(1.05);
+}
+
+.Dashboard-content-two:hover {
+    background-color: rgb(193, 103, 118);
+    color: white;
+    border-color: darkred;
+    transform: scale(1.05);
+}
+
+.Dashboard-content-three:hover {
+    background-color: green;
+    color: white;
+    border-color: darkgreen;
+    transform: scale(1.05);
+}
+
+/* Grid Item Hover Effect */
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+    background-color: #f4f4f4;
+    border-color: #888;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width:600px) {
 .Dashboard-Screen-container{
     display: flex;
