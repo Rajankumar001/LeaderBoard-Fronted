@@ -53,8 +53,11 @@
     border-bottom-right-radius: 20px;
 }
 .monthly-rank{
-    width:550px;
+    width:38vw;
     display: flex;
+}
+table{
+    width: 38vw;
 }
 .active{
     background-color: rgb(41, 204, 57);
@@ -79,7 +82,8 @@
     border-radius: 20px;
     margin-top: 10px;
     padding: 10px;
-    width: 480px;
+    /* width: 480px; */
+    width: 80%;
     height: 50px;
     font-family: "Roboto", serif;
     font-weight: 700;
@@ -96,7 +100,8 @@
     border-radius: 20px;
     margin-top: 10px;
     padding: 10px;
-    width: 480px;
+    /* width: 480px; */
+    width: 80%;
     height: 50px;
     font-family: "Roboto", serif;
     font-weight: 700;
@@ -168,11 +173,11 @@
     .top-rankers{
         display: none;
     }
-    table{
+    /* table{
         padding: 10px;
         width: 480px;
         height: 100%;
-    }
+    } */
     .rank-container{
         border-radius: 20px;
         margin-top: 10px;

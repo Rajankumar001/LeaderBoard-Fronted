@@ -30,8 +30,11 @@
     gap: 12px;
 }
 .overall-rank{
-    width:600px;
+    width:40vw;
     display: flex;
+}
+table{
+    width:40vw;
 }
 .active{
     background-color: rgb(41, 204, 57);
@@ -57,7 +60,7 @@
     border-radius: 20px;
     margin-top: 10px;
     padding: 10px;
-    width: 580px;
+    width: 90%;
     height: 50px;
     font-family: "Roboto", serif;
     font-weight: 700;
@@ -74,7 +77,8 @@
     border-radius: 20px;
     margin-top: 10px;
     padding: 10px;
-    width: 580px;
+    /* width: 580px; */
+    width: 90%;
     height: 50px;
     font-family: "Roboto", serif;
     font-weight: 700;

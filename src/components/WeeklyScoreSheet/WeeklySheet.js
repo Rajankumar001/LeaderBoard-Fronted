@@ -87,7 +87,7 @@ const WeeklySheet = () => {
                     ) : (
                         <table>
                             <div>{userRankingData ? (
-                            <div className='rank-container'>
+                            <div className='Weekly-rank-container'>
                                 <div className='rank-counting'>{Score.indexOf(userRankingData)}</div>
                                 <div className='rank-name-container'>{LoginUser.name}</div>
                                 <div className='rank-score-container'>{userRankingData.Score}</div>
@@ -100,7 +100,7 @@ const WeeklySheet = () => {
                                 {Score &&  Score.length > 0 ? (
                                   Score.slice(0,11).map((row, index) => (
                                     index > 0 && (
-                                        <div className={index === 1 || index === 2 || index === 3 ? 'rank-top-container' : 'rank-container'}> 
+                                        <div className={index === 1 || index === 2 || index === 3 ? 'Weekly-rank-top-container' : 'Weekly-rank-container'}> 
                                        { index === 1 || index === 2 || index === 3 ? (
                                     <div className="medal-icon">
                                   {index === 1 && <img src={svg_1} alt="Gold Medal" />}
