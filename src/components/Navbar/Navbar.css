@@ -1,5 +1,8 @@
 /* Navbar Styling */
 .navbar {
+  font-family: "Roboto", serif;
+  font-weight: 800;
+  font-style: normal;
   background-color: #000c66;
   color: white;
   padding: 10px 15px;
@@ -13,6 +16,10 @@
   left: 0;
   z-index: 1000;
  
+}
+.navbar-brand{
+  font-size: 1.4rem;
+  margin: auto;
 }
 span{
 color: #eed544;

@@ -34,39 +34,6 @@
   height: 3px;
   background-color: rgb(55, 121, 243); 
 }
-
-/* .User-Name {
-  font-size: 1.3rem;
-  font-family: "Roboto", serif;
-  font-weight: 500;
-  font-style: normal;
-  width: 100px;
-  height: 48.8px;
-  position: absolute;
-  background-color: #eeede7 !important;
-  right: 20%;
-  color: white;
-}
-
-.user-dropdown .dropdown-menu {
-  width: 120px !important;
-  height: 50px;
-}
-
-.logout-button {
-  margin-left: 30px;
-  padding: 0;
-  border: none;
-  width: 100px !important;
-  background-color: #ffffff;
-  height: 35px;
-  cursor: pointer;
-}
-
-.user-dropdown {
-  width: 120px !important;
-} */
-
 .nav-item {
   cursor: pointer;
   padding: 5px 10px;

@@ -13,6 +13,9 @@
     background-color: #eeede7;
 }
 .Dashboard-Screen-one{
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
     width: 90%;
     height: 300px;
     display: flex;
@@ -25,6 +28,9 @@
     height: 280px;
 }
 .Dashboard-Screen-two{
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
     width: 90%;
     height: 80px;
     display: flex;
@@ -42,6 +48,7 @@
    justify-content: center;
    align-items: center;
     border: 2px solid red;
+    border-radius: 10px;
 
 }
 .Dashboard-content-two{
@@ -54,6 +61,7 @@
    justify-content: center;
    align-items: center;
     border: 2px solid rgb(193, 103, 118);
+    border-radius: 10px;
 
 }
 .Dashboard-content-three{
@@ -66,6 +74,7 @@
    justify-content: center;
    align-items: center;
     border: 2px solid green;
+    border-radius: 10px;
 
 }
 .Dashboard-Screen-three{
@@ -75,14 +84,14 @@
     border-radius: 8px;
     text-align: center;
     padding: 20px;
-    color: orange;
+    color: rgb(22, 21, 21);
     width: 90%;
     background-color: white;
     height: auto;
 }
 .Dashboard-Screen-four{
     text-align: center;
-    color: orange;
+    color: rgb(22, 21, 21);
     width: 90%;
     padding: 20px
 }
@@ -151,5 +160,55 @@
     align-items: center;
     gap: 20px;
     width: 480px;
-}   
+    margin-left: 0px;
+}
+.Dashboard-Screen-two{
+    width: 480px;
+    height: auto;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.Dashboard-content-one{
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 30px;
+    width: 90%;
+    height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    border: 2px solid red;
+    border-radius: 10px;
+
+}
+.Dashboard-content-two{
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    width: 90%;
+    height: 60px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    border: 2px solid rgb(193, 103, 118);
+    border-radius: 10px;
+
+}
+.Dashboard-content-three{
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    width: 90%;
+    height: 60px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    border: 2px solid green;
+    border-radius: 10px;
+
+}
 }

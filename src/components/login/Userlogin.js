@@ -97,7 +97,7 @@ useEffect(() => {
                   onChange={setMobile}
                    className='form_input form-control'/>
               <Form.Text className="text-muted">
-                <p>We'll never share your mobile number with anyone else.</p>
+                <p>We'll never share your mobile number with anyone.</p>
               </Form.Text>
             </Form.Group>
             <Button onClick={SigninHandler} className='login-button'>Verify</Button>

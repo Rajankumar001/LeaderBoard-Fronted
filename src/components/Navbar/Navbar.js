@@ -21,10 +21,7 @@ function Navbarpage() {
   return (
     <nav className="navbar navbar-dark fixed-top">
       <div className="container-fluid">
-        {/* Brand Name */}
-        <a className="navbar-brand" href="#">Angel-Thon 5.0<span> LeaderBoard</span></a>
-
-        {/* Hamburger Menu */}
+        <a className="navbar-brand" href="">Angel-Thon 5.0<span> LeaderBoard</span></a>
         <button
           className="navbar-toggler"
           type="button"

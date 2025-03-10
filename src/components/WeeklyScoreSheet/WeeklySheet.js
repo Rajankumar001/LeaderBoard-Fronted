@@ -132,9 +132,6 @@ const WeeklySheet = () => {
                         </table>
                     )}
                 </div>
-                {/* <div className='top-rankers'>
-                 <Image src={image2} className='leader_board_image'></Image> 
-                </div> */}
             </div>
             </div>
             </div>

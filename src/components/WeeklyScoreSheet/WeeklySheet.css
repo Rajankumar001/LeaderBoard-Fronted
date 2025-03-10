@@ -7,7 +7,6 @@
     align-items: center;
 }
 .Weekly-main-container{
-    /* margin-right: 10px; */
     margin-top: 10px;
     position: absolute;
     top: 0;
@@ -55,35 +54,17 @@ table{
     border-bottom-right-radius: 20px;
 }
 .weekly-rank{
-    /* width:550px; */
     width: 36vw;
     display: flex;
 }
 .active{
     background-color: rgb(41, 204, 57);
 }
-/* .top-rankers{
-    display: flex;
-    justify-content: center;
-    align-items:center ;
-    position:sticky;
-    top: 0;
-    width: 35%;
-    background-color: #eed544;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%; 
-}
-.leader_board_image{
-    top: 15%;
-    width: 100%;
-    height: 80%;
-} */
 .Weekly-rank-container{
     border-radius: 20px;
     margin-top: 10px;
     padding: 10px;
-    /* width: 480px; */
-    width: 90%;
+    width: 95%;
     height: 50px;
     font-family: "Roboto", serif;
     font-weight: 700;
@@ -100,8 +81,7 @@ table{
     border-radius: 20px;
     margin-top: 10px;
     padding: 10px;
-    /* width: 480px; */
-    width: 90%;
+    width: 95%;
     height: 50px;
     font-family: "Roboto", serif;
     font-weight: 700;
@@ -156,6 +136,7 @@ table{
     border-radius: 10px;
     color: #754E1A;
 }
+
 @media (max-width:600px) {
     .Weekly-Dashboard-container{
         position: relative;
@@ -218,11 +199,6 @@ table{
         height: 55px;
         width: 80px;
     }
-    /* table{
-        padding: 10px;
-        width: 480px !important;
-        height: 100%;
-    } */
     .leader_board_image{
         display: none;
     }
