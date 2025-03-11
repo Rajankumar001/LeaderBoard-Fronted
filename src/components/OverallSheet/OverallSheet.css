@@ -1,4 +1,3 @@
-
 .overall-Dashboard-container{
     margin-top: 60px;
     position: relative;
@@ -23,7 +22,7 @@
     margin: auto;
     background-color: #eeede7;
     width: 41vw;
-    height: 95vh;
+    height: 98vh;
     display: flex;
     justify-content:space-between;
     gap: 12px;
@@ -134,7 +133,7 @@
     margin: auto;
     background-color: #eeede7;
     width: 480px;
-    height: 95vh;
+    height: auto;
     display: flex;
     justify-content:space-between;
     gap: 12px;

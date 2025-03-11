@@ -7,6 +7,7 @@ import Navbarpage from './components/Navbar/Navbar';
 import WeeklySheet from './components/WeeklyScoreSheet/WeeklySheet';
 import MonthlySheet from './components/MonthlyScoreSheet/MonthlySheet';
 import HomeScreen from './Screen/HomeScreen.js';
+import AdminPage from './components/AdminPannel/AdminDashboard/AdminPage.js';
 
 function App() {
   const ProtectedRoute = ({ children }) => {
@@ -24,6 +25,7 @@ function App() {
           <Route path='/today' element={<ProtectedRoute><OverallSheet /></ProtectedRoute>} exact />
           <Route path='/weeks' element={<ProtectedRoute><WeeklySheet /></ProtectedRoute>} exact />
           <Route path='/months' element={<ProtectedRoute><MonthlySheet /></ProtectedRoute>} exact />
+          <Route path='/admin-dashboard' element={<ProtectedRoute><AdminPage /></ProtectedRoute>} exact />
         </Routes>
       </BrowserRouter>
     </div>

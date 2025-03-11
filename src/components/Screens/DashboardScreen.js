@@ -1,77 +1,88 @@
-import React from 'react'
+import React from 'react';
 import './DashboardScreen.css';
-import DashboardImage from '../../assets/dashboard_screen_image.jpg'
+ // Separate CSS for Dashboard-Screen-five
+import DashboardImage from '../../assets/dashboard_screen_image.jpg';
+import starIcon from '../../assets/star_icon.png';
+
 const DashboardScreen = () => {
   return (
     <>
       <div className='Dashboard-Screen-container'>
-       <div className='Dashboard-Screen-one'>
-        <img src={DashboardImage} className='Dashboard-Screen-image'></img>
-       </div>
-       <div className='Dashboard-Screen-two'>
-        <div className='Dashboard-content-one'>Total Ap earned:280</div>
-        <div className='Dashboard-content-two'>Total check-ins done:1</div>
-        <div className='Dashboard-content-three'>Total check-ins missed:4</div>
-       </div>
-       <div className='Dashboard-Screen-three'>
-        <h5>Day Streak 1</h5>
-        <p>
-        There had to be a better way. That's all Nancy could think as she sat at her desk staring at her computer screen. She'd already spent five years of her life in this little cubicle staring at her computer doing "work" that didn't seem to matter to anyone including her own boss. There had to be more to her life than this and there had to be a better way to make a living. That's what she was thinking when the earthquake struck.
-        </p>
-       </div>
-       <div className='Dashboard-Screen-four'>
-       <div className="grid-container">
-            <div className="grid-item">Item 1</div>
-            <div className="grid-item">Item 2</div>
-            <div className="grid-item">Item 3</div>
-            <div className="grid-item">Item 4</div>
-            <div className="grid-item">Item 5</div>
-            <div className="grid-item">Item 6</div>
+        <div className='Dashboard-Screen-one'>
+          <img src={DashboardImage} className='Dashboard-Screen-image' alt="Dashboard" />
+        </div>
+
+        <div className='Dashboard-Screen-two'>
+          <div className='Dashboard-content-one'>Total Ap earned: 280</div>
+          <div className='Dashboard-content-two'>Total check-ins done: 1</div>
+          <div className='Dashboard-content-three'>Total check-ins missed: 4</div>
+        </div>
+
+        <div className='Dashboard-Screen-three'>
+          <div className='Screen-three-top'>
+            <div className='Screen-three-icon'>
+              <img src={starIcon} className='screen-three-iconImage' alt="Star Icon" />
+            </div>
+            <div className='Screen-three-topContent'>
+              <h2>1</h2>
+              <p>Day Streak</p>
+            </div>
           </div>
-       </div>
-       <div className='Dashboard-Screen-four'>
-       <div className="grid-container">
-            <div className="grid-item">Item 1</div>
-            <div className="grid-item">Item 2</div>
-            <div className="grid-item">Item 3</div>
-            <div className="grid-item">Item 4</div>
-            <div className="grid-item">Item 5</div>
-            <div className="grid-item">Item 6</div>
+          <div className='Screen-three-bottom'></div>
+        </div>
+
+        <div className='Dashboard-Screen-four'>
+          <div className="grid-container">
+            <div className="grid-item">
+              <div className='Screen-four-icon'>
+                <i className="fa-solid fa-calendar-days"></i>
+              </div>
+              <div className='Screen-four-heading'><h5>Date</h5></div>
+              <div className='Screen-four-content'>10/02/2025 - 10/03/2025</div>
+            </div>
+            <div className="grid-item">
+              <div className='Screen-four-icon'>
+                <i className="fa-solid fa-hourglass-end"></i>
+              </div>
+              <div className='Screen-four-heading'><h5>Duration</h5></div>
+              <div className='Screen-four-content'>32 Days</div>
+            </div>
+            <div className="grid-item">
+              <div className='Screen-four-icon'>
+                <i className="fa-solid fa-database"></i>
+              </div>
+              <div className='Screen-four-heading'><h5>Total Ap</h5></div>
+              <div className='Screen-four-content'>2650</div>
+            </div>
+            <div className="grid-item">
+              <div className='Screen-four-icon'>
+                <i className="fa-solid fa-lightbulb"></i>
+              </div>
+              <div className='Screen-four-heading'><h5>Type</h5></div>
+              <div className='Screen-four-content'>Weekly</div>
+            </div>
+            <div className="grid-item">
+              <div className='Screen-four-icon'>
+                <i className="fa-solid fa-user-check"></i>
+              </div>
+              <div className='Screen-four-heading'><h5>Check-ins</h5></div>
+              <div className='Screen-four-content'>280 Ap/day</div>
+            </div>
+            <div className="grid-item">
+              <div className='Screen-four-icon'>
+                <i className="fa-solid fa-users"></i>
+              </div>
+              <div className='Screen-four-heading'><h5>Total participants</h5></div>
+              <div className='Screen-four-content'>40</div>
+            </div>
           </div>
-       </div>
-       <div className='Dashboard-Screen-four'>
-       <div className="grid-container">
-            <div className="grid-item">Item 1</div>
-            <div className="grid-item">Item 2</div>
-            <div className="grid-item">Item 3</div>
-            <div className="grid-item">Item 4</div>
-            <div className="grid-item">Item 5</div>
-            <div className="grid-item">Item 6</div>
-          </div>
-       </div>
-       <div className='Dashboard-Screen-four'>
-       <div className="grid-container">
-            <div className="grid-item">Item 1</div>
-            <div className="grid-item">Item 2</div>
-            <div className="grid-item">Item 3</div>
-            <div className="grid-item">Item 4</div>
-            <div className="grid-item">Item 5</div>
-            <div className="grid-item">Item 6</div>
-          </div>
-       </div>
-       <div className='Dashboard-Screen-four'>
-       <div className="grid-container">
-            <div className="grid-item">Item 1</div>
-            <div className="grid-item">Item 2</div>
-            <div className="grid-item">Item 3</div>
-            <div className="grid-item">Item 4</div>
-            <div className="grid-item">Item 5</div>
-            <div className="grid-item">Item 6</div>
-          </div>
-       </div>
+        </div>
+        <div className='Dashboard-Screen-five'>
+          
+        </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default DashboardScreen
+export default DashboardScreen;
