@@ -108,22 +108,52 @@
   /* border: 1px solid orange; */
 }
 .screen-three-iconImage{
-    opacity: 0.4;
+    opacity: 0.6;
     width: 40px;
     height:40px;
-    /* border: 1px solid orange; */
   }
   .Screen-three-bottom{
-    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100px;
+    height: 70px;
   }
-
-
-
-
-
-
+  .carousel-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 78%;
+  }
+  .carousel-button{
+    border-radius: 50%;
+    background-color: white;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    
+  }
+ .day-checkins{
+    color: rgb(215, 136, 149);
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    gap: 3px;
+ }
+ .cross-icon{
+   margin-top: 10px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+ }
 /* screen-four-styling........... */
 .Dashboard-Screen-four{
     /* border: 1px solid black; */
@@ -211,19 +241,30 @@
 .Screen-four-content{
     color: grey;
 }
-
-
-
-
-
 /* Dashboard-Screen-five styles */
 .Dashboard-Screen-five {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: 90%;
-    background-color: #fff;
-    padding: 20px;
+    padding-top: 20px;
     border-radius: 10px;
-    text-align: center;
-    margin-top: 20px;
+    font-weight: 800;
+    /* margin-top: 20px; */
+  }
+  .Dashboard-Screen-five h2{
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: start;
+  }
+  .Dashboard-Screen-five h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: start;
+  }
+  .Dashboard-Screen-five li{
+    
+    text-align: start;
   }
   
   
