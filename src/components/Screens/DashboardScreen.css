@@ -13,6 +13,7 @@
     background-color: #eeede7;
     padding-bottom: 20px;
 }
+/* Css for Screen-one shown below  */
 .Dashboard-Screen-one{
     font-family: "Roboto", serif;
     font-weight: 700;
@@ -28,6 +29,7 @@
     width: 100%;
     height: 380px;
 }
+/* css for Screen-two shown below  */
 .Dashboard-Screen-two{
     font-family: "Roboto", serif;
     font-weight: 700;
@@ -44,11 +46,11 @@
     font-weight: 500;
     font-style: normal;
     width: 30%;
-    height: 30px ;
+    height: auto ;
     display: flex;
     justify-content: center;
    align-items: center;
-    border: 2px solid rgb(193, 103, 118);
+    border: 2px solid green;
     border-radius:6px;
 
 }
@@ -57,11 +59,11 @@
     font-weight: 500;
     font-style: normal;
     width: 30%;
-    height: 30px;
+    height: auto;
    display: flex;
    justify-content: center;
    align-items: center;
-    border: 2px solid rgb(219, 41, 41);
+    border: 2px solid orange;
     border-radius: 6px;
 
 }
@@ -70,14 +72,54 @@
     font-weight: 500;
     font-style: normal;
     width: 30%;
-    height: 30px;
+    height: auto;
     display: flex;
    justify-content: center;
    align-items: center;
-    border: 2px solid green;
+    border: 2px solid pink;
     border-radius: 6px;
 
 }
+.Dashboard-content-one p{
+    margin: 0;
+    text-align: center;
+}
+.Dashboard-content-two p{
+    margin: 0;
+    text-align: center;
+}
+.Dashboard-content-three p{
+    margin: 0;
+    text-align: center;
+}
+.Dashboard-content-one,
+.Dashboard-content-two,
+.Dashboard-content-three {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.Dashboard-content-one:hover {
+    background-color: orange;
+    color: white;
+    border-color: darkorange;
+    transform: scale(1.05);
+}
+
+.Dashboard-content-two:hover {
+    background-color: green;
+    color: white;
+    border-color: darkgreen;
+    transform: scale(1.05);
+}
+
+.Dashboard-content-three:hover {
+    background-color: rgb(230, 124, 142);
+    color: white;
+    border-color:rgb(210, 132, 145);
+    transform: scale(1.05);
+}
+
 /* screen-three styling.......... */
 .Dashboard-Screen-three{
     font-family: "Roboto", serif;
@@ -95,17 +137,14 @@
     height: auto;
 }
 .Screen-three-top{
-    /* border: 1px solid black; */
     display: flex;
     justify-content: start;
-    /* align-items: center; */
     width: 100%;
     height: auto;
 }
 .Screen-three-icon{
   width: 60px;
   height:60px;
-  /* border: 1px solid orange; */
 }
 .screen-three-iconImage{
     opacity: 0.6;
@@ -156,14 +195,13 @@
  }
 /* screen-four-styling........... */
 .Dashboard-Screen-four{
-    /* border: 1px solid black; */
+   
     text-align: center;
     color: rgb(22, 21, 21);
     width: 90%;
-    /* padding: 20px */
+   
 }
 .grid-container {
-    /* border: 2px solid orange; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 10px;
@@ -181,33 +219,6 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-.Dashboard-content-one,
-.Dashboard-content-two,
-.Dashboard-content-three {
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.Dashboard-content-one:hover {
-    background-color: red;
-    color: white;
-    border-color: darkred;
-    transform: scale(1.05);
-}
-
-.Dashboard-content-two:hover {
-    background-color: rgb(193, 103, 118);
-    color: white;
-    border-color: darkred;
-    transform: scale(1.05);
-}
-
-.Dashboard-content-three:hover {
-    background-color: green;
-    color: white;
-    border-color: darkgreen;
-    transform: scale(1.05);
 }
 
 /* Grid Item Hover Effect */
@@ -254,20 +265,30 @@
   }
   .Dashboard-Screen-five h2{
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 600;
     text-align: start;
   }
   .Dashboard-Screen-five h3{
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 600;
+    text-align: start;
+  }
+  .Dashboard-Screen-five p{
+    font-size: 1.2rem;
+    font-weight: 500;
     text-align: start;
   }
   .Dashboard-Screen-five li{
-    
+    font-weight: 500;
+    color: rgb(49, 48, 48);
+    text-align: start;
+  }
+  .Dashboard-Screen-five strong{
+    color: black;
     text-align: start;
   }
   
-  
+  /* Mobile responsive------------- */
 @media (max-width:600px) {
 .Dashboard-Screen-container{
     display: flex;
@@ -287,6 +308,7 @@
     align-items: center;
 }
 .Dashboard-content-one{
+    flex-wrap: wrap;
     font-family: "Roboto", serif;
     font-weight: 500;
     font-style: normal;
@@ -300,7 +322,9 @@
     border-radius: 10px;
 
 }
+
 .Dashboard-content-two{
+    flex-wrap: wrap;
     font-family: "Roboto", serif;
     font-weight: 500;
     font-style: normal;
@@ -314,11 +338,12 @@
 
 }
 .Dashboard-content-three{
+    flex-wrap: wrap;
     font-family: "Roboto", serif;
     font-weight: 500;
     font-style: normal;
     width: 90%;
-    height: 60px;
+    height:60px;
     display: flex;
    justify-content: center;
    align-items: center;
@@ -326,4 +351,14 @@
     border-radius: 10px;
 
 }
+.fa-solid {
+    line-height: 1.2;
+    left: 0;
+    position: sticky;
+    height: 50px;
+    width: 30px;
+    font-size: 1.8rem;
+    color: pink !important;
+}
+
 }

@@ -1,7 +1,8 @@
 .Weekly-Dashboard-container{
     margin-top: 60px;
     position: relative;
-    width: 98vw;
+    /* width: 98vw; */
+    width: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,11 +13,13 @@
     top: 0;
     right: 0;
     width: 41vw;
+    /* width: auto; */
     display: flex;
     flex-direction: column;
 }
 table{
-    width: 32vw;
+    /* width: 32vw; */
+    width: auto;
 }
 .Weekly-container{
     margin: auto;
@@ -24,10 +27,12 @@ table{
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     width: 41vw;
-    height: 98vh;
+    /* height: 98vh; */
+    height: auto;
     display: flex ;
     justify-content:space-between;
     gap: 12px;
+    padding-bottom: 20px;
 }
 .sidebar{
     position:sticky;
@@ -47,11 +52,13 @@ table{
     font-weight: 500;
     font-style: normal;
     font-size: 1.2rem;
-    width: 120px;
-    height: 40px;
+    /* width: 120px; */
+    width: auto;
+    /* height: 40px; */
+    height: auto;
     border: none;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 .weekly-rank{
     width: 36vw;
@@ -64,8 +71,10 @@ table{
     border-radius: 20px;
     margin-top: 10px;
     padding: 10px;
-    width: 95%;
-    height: 50px;
+    /* width: 95%; */
+    width: auto;
+    /* height: 50px; */
+    height: auto;
     font-family: "Roboto", serif;
     font-weight: 700;
     font-style: normal;
@@ -81,8 +90,10 @@ table{
     border-radius: 20px;
     margin-top: 10px;
     padding: 10px;
-    width: 95%;
-    height: 50px;
+    /* width: 95%; */
+    width: auto;
+    /* height: 50px; */
+    height: auto;
     font-family: "Roboto", serif;
     font-weight: 700;
     font-style: normal;
@@ -136,7 +147,7 @@ table{
     border-radius: 10px;
     color: #754E1A;
 }
-
+/* Mobile Responsive ---------------------------------> */
 @media (max-width:600px) {
     .Weekly-Dashboard-container{
         position: relative;

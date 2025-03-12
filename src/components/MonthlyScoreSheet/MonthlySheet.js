@@ -104,7 +104,7 @@ const MonthlySheet = () => {
                                            )}
                                                                           
                                             <div className='rank-name-container'>
-                                               {row.Name}
+                                               <p>{row.Name}</p>
                                             </div>
                                             <div className={index === 1 || index === 2 || index === 3 ? 'rank-top-score-container' : 'rank-score-container'}>
                                               {

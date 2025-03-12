@@ -94,7 +94,7 @@ const OverallSheet = () => {
                               <div className="rank-counting">{index}</div>
                             )}
                             <div className="rank-name-container">
-                              {row.Name}
+                              <p>{row.Name}</p>
                             </div>
                             <div
                               className={

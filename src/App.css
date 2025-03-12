@@ -3,7 +3,7 @@
 }
 .app-container{
   position: relative;
-  /* width: 98vw; */
+  width: 98vw;
   padding-bottom: 40px;
 }
 @media (max-width:600px) {
