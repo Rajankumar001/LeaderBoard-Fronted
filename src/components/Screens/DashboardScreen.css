@@ -19,7 +19,7 @@
     font-weight: 700;
     font-style: normal;
     width: 90%;
-    height: 400px;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
 .Dashboard-Screen-image{
     border-radius: 8px;
     width: 100%;
-    height: 380px;
+    height: 430px;
 }
 /* css for Screen-two shown below  */
 .Dashboard-Screen-two{
@@ -179,19 +179,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 70px;
+    width: 24%;
+    height: 24%;
     gap: 3px;
  }
  .cross-icon{
-   margin-top: 10px;
+    color: red;
        display: flex;
        justify-content: center;
        align-items: center;
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    border-radius: 50%;
  }
 /* screen-four-styling........... */
 .Dashboard-Screen-four{
@@ -299,6 +295,7 @@
     margin-left: 0px;
 }
 .Dashboard-Screen-two{
+    /* width: auto; */
     width: 480px;
     height: auto;
     display: flex;
@@ -327,14 +324,24 @@
     width: 90%;
     height:60px;
 }
-.fa-solid {
-    line-height: 1.2;
-    left: 0;
-    position: sticky;
-    height: 50px;
-    width: 30px;
-    font-size: 1.8rem;
-    color: pink !important;
-}
+.day-checkins{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    gap: 7px;
+ }
+.cross-icon i{
+    width: 5%;
+    height: 5%;
+    margin: auto;
+    font-size: 1rem;
+    color: red;
 
+}
+.Screen-four-icon i{
+    line-height: 1.2;
+    color: pink;
+}
 }

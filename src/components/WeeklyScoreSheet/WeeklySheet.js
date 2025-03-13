@@ -94,7 +94,7 @@ const WeeklySheet = () => {
                             </div>
                             ) : (
                                 <div>
-                                    <p>User is not present</p>
+                                    <p>poor network connection !</p>
                                 </div>
                             )}</div>
                                 {Score &&  Score.length > 0 ? (

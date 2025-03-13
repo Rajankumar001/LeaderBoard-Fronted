@@ -47,7 +47,7 @@ const MonthlySheet = () => {
             <DashboardScreen/>
           <div className='Monthly-main-container'>
             <HeaderPage/>
-            <div className="monthly-container">
+            <div className="Monthly-container">
                 <div className='Mobile-responsive-monthly'>
          <ButtonGroup aria-label="Basic example">
         <Button onClick={() => handleclick(1)} className='responsive-button-monthly'>Month 1</Button>
@@ -69,7 +69,7 @@ const MonthlySheet = () => {
                         );
                     })}
                 </div>
-                <div className="monthly-rank">
+                <div className="Monthly-rank">
                     {loading ? (
                        <Loader/>
                     ) : error ? (

@@ -60,9 +60,11 @@ const DashboardScreen = () => {
         {days.slice(currentIndex, currentIndex + visibleItems).map((day, index) => (
           <div key={index} className="day-checkins">
             <div className="cross-icon">
-              <i className="fa-solid fa-xmark"></i>
+            <i class="fa-solid fa-circle-xmark"></i>
             </div>
+            <div>
             {day}
+            </div>
           </div>
         ))}
       </div>

@@ -1,8 +1,7 @@
 .Weekly-Dashboard-container{
     margin-top: 60px;
     position: relative;
-    /* width: 98vw; */
-    width: auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,26 +11,21 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 41vw;
-    /* width: auto; */
+    width: 41.5%;
     display: flex;
     flex-direction: column;
 }
-table{
-    /* width: 32vw; */
-    width: auto;
-}
+
 .Weekly-container{
     margin: auto;
     background-color: #eeede7;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    width: 41vw;
-    /* height: 98vh; */
+    width: 100%;
     height: auto;
     display: flex ;
     justify-content:space-between;
-    gap: 12px;
+    gap: 8px;
     padding-bottom: 20px;
 }
 .sidebar{
@@ -52,16 +46,14 @@ table{
     font-weight: 500;
     font-style: normal;
     font-size: 1.2rem;
-    /* width: 120px; */
     width: auto;
-    /* height: 40px; */
     height: auto;
     border: none;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 .weekly-rank{
-    width: 36vw;
+     width: 36vw; 
     display: flex;
 }
 .active{
@@ -71,9 +63,7 @@ table{
     border-radius: 20px;
     margin-top: 10px;
     padding: 10px;
-    /* width: 95%; */
-    width: auto;
-    /* height: 50px; */
+    width: 98%;
     height: auto;
     font-family: "Roboto", serif;
     font-weight: 700;
@@ -90,9 +80,7 @@ table{
     border-radius: 20px;
     margin-top: 10px;
     padding: 10px;
-    /* width: 95%; */
-    width: auto;
-    /* height: 50px; */
+    width: 98%;
     height: auto;
     font-family: "Roboto", serif;
     font-weight: 700;
@@ -108,15 +96,15 @@ table{
 }
 .medal-icon{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    width: 50px;
-    height: 30px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
 }
 .medal-icon img{
-    width: 42px;
-    height: 30px;
+    width: 100%;
+    height: 80%;
 }
 .rank-counting{
     display: flex;
@@ -147,6 +135,93 @@ table{
     border-radius: 10px;
     color: #754E1A;
 }
+ @media (min-width:600px)and (max-width:800px) {
+    .Weekly-Dashboard-container{
+        position: relative;
+        display: flex;
+        justify-content: space-between !important;
+        align-items: center;
+    }
+    .Weekly-main-container{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Weekly-container{
+        position: relative;
+        height: 100%;
+        /* padding-right: 10px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .weekly-rank{
+        width: 100%;
+        padding-right: 10px;
+        height: 100%;
+    }
+    .Weekly-rank-container{
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 10px;
+        /* width: 440px; */
+        width: 98%;
+        height: 50px;
+        font-family: "Roboto", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.2rem;
+        color: #fefdf5;
+        display: flex;
+        background: linear-gradient(to right, #3e5151, #decba4); 
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .Weekly-rank-top-container{
+        color: #fffefe;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 10px;
+        width: 98%;
+        height: 50px;
+        font-family: "Roboto", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.2rem;
+        background: linear-gradient(to right, #544a7d, #ffd452);
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .Mobile-responsive{
+        position: sticky;
+        top: 0;
+        right: 0;
+        overflow: scroll;
+        height: 55px;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .btn-primary {
+        color: #10190b;
+        font-weight: 600;
+        background: linear-gradient(to right, #544a7d, #ffd452);
+    }
+    .sidebar{
+        display: none;
+    }
+    .week-leaderboard-button{
+        display: none;
+     }
+     .top-rankers{
+         display: none;
+     }
+ }
 /* Mobile Responsive ---------------------------------> */
 @media (max-width:600px) {
     .Weekly-Dashboard-container{
@@ -185,6 +260,7 @@ table{
         align-items: center;
         
     }
+    
     .weekly-rank{
         width: 460px;
         height: 100%;
@@ -261,7 +337,7 @@ table{
         align-items: center;
     }
 }
-@media (min-width:600px) {
+@media (min-width:800px) {
     .Mobile-responsive{
        
         display: none;
