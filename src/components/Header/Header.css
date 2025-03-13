@@ -3,6 +3,8 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   background-color: #eeede7;
+  /* background: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(10px); */
   padding: 0px 20px;
   font-family: "Roboto", serif;
   font-weight: 500;

@@ -53,6 +53,7 @@
     border-bottom-right-radius: 12px;
 }
 .weekly-rank{
+    padding-top: 10px;
      width: 36vw; 
     display: flex;
 }
