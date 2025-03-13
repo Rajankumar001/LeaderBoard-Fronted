@@ -188,6 +188,44 @@
         align-items: center;
         
     }
+    .rank-container{
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 10px;
+        /* width: 440px; */
+        width: auto;
+        /* height: 50px; */
+        height: auto;
+        font-family: "Roboto", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.2rem;
+        color: #fefdf5;
+        display: flex;
+        background: linear-gradient(to right, #3e5151, #decba4); 
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .rank-top-container{
+        color: #fffefe;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 10px;
+        /* width: 440px; */
+        width: auto;
+        /* height: 50px; */
+        height: auto;
+        font-family: "Roboto", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.2rem;
+        background: linear-gradient(to right, #544a7d, #ffd452);
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
 
     
     .Mobile-responsive-monthly{
