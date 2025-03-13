@@ -39,12 +39,9 @@ const WeeklySheet = () => {
             }
             return null;
         };
-    
         const userRankingData = getUserRankingData();
-
     return (
         <>
-        {/* <HeaderPage/> */}
         <div className='Weekly-Dashboard-container'>
             <DashboardScreen/>
             <div className='Weekly-main-container'>
@@ -63,7 +60,7 @@ const WeeklySheet = () => {
         <Button onClick={() => handleclick(9)}className='responsive-button'>Week 9</Button>
         </ButtonGroup>
     </div> 
-                <div className='sidebar'>
+      <div className='sidebar'>
                     {[...Array(9)].map((_, index) => {
                         const week = 9 - index;
                         return (
