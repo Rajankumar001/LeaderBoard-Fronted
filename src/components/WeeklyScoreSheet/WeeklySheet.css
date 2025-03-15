@@ -42,9 +42,10 @@
 .week-leaderboard-button{
     background-color: #000c66;
     color: white;
-    font-family: "Roboto", serif;
-    font-weight: 500;
-    font-style: normal;
+    font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight:500;
+        font-style: normal;
     font-size: 1.2rem;
     width: auto;
     height: auto;
@@ -66,8 +67,9 @@
     padding: 10px;
     width: 98%;
     height: auto;
-    font-family: "Roboto", serif;
-    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:500;
     font-style: normal;
     font-size: 1.2rem;
     color: #fefdf5;
@@ -83,9 +85,10 @@
     padding: 10px;
     width: 98%;
     height: auto;
-    font-family: "Roboto", serif;
-    font-weight: 700;
-    font-style: normal;
+    font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight:500;
+        font-style: normal;
     font-size: 1.2rem;
     background: linear-gradient(to right, #544a7d, #ffd452);
     display: flex;
@@ -173,8 +176,9 @@
         width:auto;
         /* height: 50px; */
         height: auto;
-        font-family: "Roboto", serif;
-        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight:500;
         font-style: normal;
         font-size: 1.2rem;
         color: #fefdf5;
@@ -193,8 +197,9 @@
         width: auto;
         /* height: 50px; */
         height: auto;
-        font-family: "Roboto", serif;
-        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight:500;
         font-style: normal;
         font-size: 1.2rem;
         background: linear-gradient(to right, #544a7d, #ffd452);
@@ -300,8 +305,9 @@
         padding: 10px;
         width: 440px;
         height: 50px;
-        font-family: "Roboto", serif;
-        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight:500;
         font-style: normal;
         font-size: 1.2rem;
         color: #fefdf5;
@@ -318,8 +324,9 @@
         padding: 10px;
         width: 440px !important;
         height: 50px;
-        font-family: "Roboto", serif;
-        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight:500;
         font-style: normal;
         font-size: 1.2rem;
         background: linear-gradient(to right, #544a7d, #ffd452);

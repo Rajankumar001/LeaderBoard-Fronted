@@ -2,6 +2,7 @@
 body {
   /* background-color: rgb(152, 132, 132) !important; */
   margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

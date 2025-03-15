@@ -1,6 +1,7 @@
 .Dashboard-Screen-container{
-    font-family: "Roboto", serif;
-    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
     border-radius: 8px;
     margin-left: 10px;
@@ -33,8 +34,9 @@
 }
 /* css for Screen-two shown below  */
 .Dashboard-Screen-two{
-    font-family: "Roboto", serif;
-    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:600;
     font-style: normal;
     width: 90%;
     height: 50px;
@@ -124,8 +126,9 @@
 
 /* screen-three styling.......... */
 .Dashboard-Screen-three{
-    font-family: "Roboto", serif;
-    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:500;
     font-style: normal;
     display: flex;
     flex-direction: column;

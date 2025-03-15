@@ -1,7 +1,8 @@
 /* Navbar Styling */
 .navbar {
-  font-family: "Roboto", serif;
-  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:700;
   font-style: normal;
   background-color: #000c66;
   color: white;
@@ -15,7 +16,6 @@
   top: 0;
   left: 0;
   z-index: 1000;
- 
 }
 .navbar-brand{
   font-size: 1.4rem;

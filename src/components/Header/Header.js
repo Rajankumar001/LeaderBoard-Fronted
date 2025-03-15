@@ -5,15 +5,12 @@ import { NavDropdown } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { logoutUser } from "../../Action/RegistrationAction";
 import { Link, useLocation } from "react-router-dom";
-import { FaUser } from "react-icons/fa"; 
-
 const HeaderPage = () => {
   const [user, setUser] = useState(null);
   const [showDropdown, setShowDropdown] = useState(false); 
   const dispatch = useDispatch();
   const location = useLocation();
   const [activeTab, setActiveTab] = useState("/today");
-
   useEffect(() => {
     const storedUser = localStorage.getItem("LoginUser");
     if (storedUser) {
@@ -21,7 +18,6 @@ const HeaderPage = () => {
     }
     setActiveTab(location.pathname);
   }, [location.pathname]);
-
   return (
     <>
       <div className="header-class">
@@ -53,11 +49,9 @@ const HeaderPage = () => {
               Months
             </Link>
           </li>
-
         </ul>
       </div>
     </>
   );
 };
-
 export default HeaderPage;
