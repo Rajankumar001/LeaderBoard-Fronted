@@ -10,6 +10,8 @@
 .overall-main-container{
     margin-top: 10px;
     position: absolute;
+    background-color: #eeede7;
+    border-radius: 10px;
     top: 0;
     right: 0;
     /* width: 41vw; */
@@ -22,7 +24,9 @@
     border-bottom-right-radius: 8px;
     padding-left: 10px;
     margin: auto;
-    background-color: #eeede7;
+    /* background-color: #eeede7; */
+    /* background: rgba(255, 254, 254, 0.9); 
+    backdrop-filter: blur(10px); */
     /* width: 41vw; */
     width: 100%;
     /* height: 100vh; */
@@ -199,68 +203,4 @@
     gap: 10px;
 }
 }
-/* @media (max-width: 600px) {
-    .overall-Dashboard-container {
-        position: relative;
-        width: 100%;
-        max-width:500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
 
-    .overall-main-container {
-        position: absolute;
-        top: 100%;
-        width: 100%;
-        max-width: 480px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .overall-container {
-        padding: 10px;
-        margin: auto;
-        background-color: #eeede7;
-        width: 100%;
-        max-width: 480px;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-        gap: 12px;
-    }
-
-    .overall-rank {
-        width: 100%;
-        display: flex;
-    }
-
-    .overall-rank-container,
-    .overall-rank-top-container {
-        border-radius: 20px;
-        margin-top: 10px;
-        padding: 10px;
-        width: 100%;
-        max-width: 450px;
-        height: 50px;
-        font-family: "Roboto", serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 1.2rem;
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-    }
-
-    .overall-rank-container {
-        color: #fefdf5;
-        background: linear-gradient(to right, #3e5151, #decba4);
-    }
-
-    .overall-rank-top-container {
-        color: #fffefe;
-        background: linear-gradient(to right, #544a7d, #ffd452);
-    }
-} */

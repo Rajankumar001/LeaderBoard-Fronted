@@ -11,7 +11,6 @@ const DashboardScreen = () => {
   const prevSlide = () => {
     setCurrentIndex((prev) => (prev > 0 ? prev - 1 : days.length - visibleItems));
   };
-
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev < days.length - visibleItems ? prev + 1 : 0));
   };
